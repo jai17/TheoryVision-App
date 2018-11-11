@@ -686,7 +686,7 @@ public class CameraView extends AppCompatActivity implements CameraBridgeViewBas
                 }
             });
             connectedUDP = false;
-        }*/
+        }*///Not working
     }
 
     public double getDistance(int fieldOfViewPixels, double halfLensFOV,  double targetWidthPixels) {
