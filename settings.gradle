@@ -1,0 +1,2 @@
+include ':app', ':ntcore', ':pocketsphinx-android-5prealpha-release', ':models'
+include ':openCVLibrary343'

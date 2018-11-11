@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/settings_viewer"
+    android:orientation="vertical">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/viewer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/viewer_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Settings Viewer"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:layout_marginLeft="16dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginRight="16dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:id="@+id/hsv_viewer_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HSV Settings"
+            android:textColor="@color/colorOrange"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintTop_toBottomOf="@id/viewer_title"
+            android:layout_marginTop="5dp" />
+        <TextView
+            android:id="@+id/h_maxmin_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hue"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintTop_toBottomOf="@id/hsv_viewer_title"
+            android:layout_marginTop="5dp" />
+        <TextView
+            android:id="@+id/s_maxmin_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sat"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintTop_toBottomOf="@id/h_maxmin_title"
+            android:layout_marginTop="5dp" />
+        <TextView
+            android:id="@+id/v_maxmin_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Val"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintTop_toBottomOf="@id/s_maxmin_title"
+            android:layout_marginTop="5dp" />
+        <TextView
+            android:id="@+id/filter_viewer_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Filter Settings"
+            android:textColor="@color/colorOrange"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintTop_toBottomOf="@id/v_maxmin_title"
+            android:layout_marginTop="5dp" />
+        <TextView
+            android:id="@+id/bound_rect_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Number of Targets"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintTop_toBottomOf="@id/filter_viewer_title"
+            android:layout_marginTop="5dp" />
+        <TextView
+            android:id="@+id/area_maxmin_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Min/Max Area"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintTop_toBottomOf="@id/bound_rect_title"
+            android:layout_marginTop="5dp" />
+        <TextView
+            android:id="@+id/perimeter_maxmin_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Min/Max Perimeter"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintTop_toBottomOf="@id/area_maxmin_title"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/width_maxmin_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Min/Max Width"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintTop_toBottomOf="@id/perimeter_maxmin_title"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:id="@+id/height_maxmin_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Min/Max Height"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintTop_toBottomOf="@id/width_maxmin_title"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/solidity_maxmin_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Min/Max Solidity"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintTop_toBottomOf="@id/height_maxmin_title"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/vertices_maxmin_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Min/Max Vertices"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintTop_toBottomOf="@id/solidity_maxmin_title"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/ratio_maxmin_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Min/Max Ratio"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintTop_toBottomOf="@id/vertices_maxmin_title"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/processing_settings_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Processing Settings"
+            android:textColor="@color/colorOrange"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintTop_toBottomOf="@id/ratio_maxmin_title"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:id="@+id/resolution_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resolution"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintTop_toBottomOf="@id/processing_settings_title"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/fps_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Frames per Second"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintTop_toBottomOf="@id/resolution_title"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/portrait_orientation_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Portrait Orientation"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintTop_toBottomOf="@id/fps_title"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/landscape_orientation_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Landscape Orientation"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintTop_toBottomOf="@id/portrait_orientation_title"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/white_balance_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WhiteBalance"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintTop_toBottomOf="@id/landscape_orientation_title"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/colour_effect_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Colour Effect"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintTop_toBottomOf="@id/white_balance_title"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/zoom_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Zoom"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintTop_toBottomOf="@id/colour_effect_title"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/fov_horizontal_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FOV Horizontal"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintTop_toBottomOf="@id/zoom_title"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/fov_vertical_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FOV Vertical"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintTop_toBottomOf="@id/fov_horizontal_title"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/focal_horizontal_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Focal Horizontal"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintTop_toBottomOf="@id/fov_vertical_title"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/focal_verticle_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Focal Vericle"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintTop_toBottomOf="@id/focal_horizontal_title"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/robot_ip_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Robot IP"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintTop_toBottomOf="@id/focal_verticle_title"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/networktable_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Networktable"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintTop_toBottomOf="@id/robot_ip_title"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/target_width_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Target Width"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintTop_toBottomOf="@id/networktable_title"
+            android:layout_marginTop="5dp"/>
+
+        <Space
+            android:id="@+id/space_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            app:layout_constraintTop_toBottomOf="@id/target_width_title"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

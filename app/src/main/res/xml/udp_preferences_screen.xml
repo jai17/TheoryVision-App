@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="UDP Outputs">
+        <CheckBoxPreference
+            android:key="udp_pref_angle_h"
+            android:title="Horizontal Angle to Target"
+            android:summary="Returns the horizontal angle in degrees to target"
+            android:defaultValue="true"/>
+        <CheckBoxPreference
+            android:key="udp_pref_angle_v"
+            android:title="Vertical Angle to Target"
+            android:summary="Returns the vertical angle in degrees to target"/>
+        <CheckBoxPreference
+            android:key="udp_pref_coordinates"
+            android:title="Coordinates of the Targets"
+            android:summary="Returns the corner coordinates of each bounding rectangle"/>
+        <CheckBoxPreference
+            android:key="udp_pref_sys_time"
+            android:title="Device System Time"
+            android:summary="Returns the device system time"/>
+
+        <CheckBoxPreference
+            android:key="udp_pref_distance_h"
+            android:title="Horizontal Distance from Target"
+            android:summary="Returns the Distance from target in inches when in landscape orientation"/>
+
+        <CheckBoxPreference
+            android:key="udp_pref_distance_v"
+            android:title="Vertical Distance from Target"
+            android:summary="Returns the Distance from target in inches when in portrait orientation"/>
+    </PreferenceCategory>
+</PreferenceScreen>

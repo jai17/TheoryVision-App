@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="NetworkTable Outputs">
+        <CheckBoxPreference
+            android:key="nt_pref_connected"
+            android:title="Device Connected to Robot"
+            android:summary="Returns a boolean showing if NT is connected to robot"
+            android:defaultValue="true"/>
+        <CheckBoxPreference
+            android:key="nt_pref_targets"
+            android:title="Number of Targets Tracked"
+            android:summary="Returns the number os targets being currently tracked by the app"
+            android:defaultValue="true"/>
+        <CheckBoxPreference
+            android:key="nt_pref_fps"
+            android:title="Camera FPS"
+            android:summary="Returns the camera FPS"
+            android:defaultValue="true"/>
+        <CheckBoxPreference
+            android:key="nt_pref_height"
+            android:summary="Returns the image height in pixels"
+            android:title="Image Height" />
+        <CheckBoxPreference
+            android:key="nt_pref_width"
+            android:summary="Returns the image width in pixels"
+            android:title="Image Width" />
+        <CheckBoxPreference
+            android:key="nt_pref_fov_h"
+            android:title="Device Field of View (Horizontal)"
+            android:summary="Returns the horizontal field of view of the device"/>
+        <CheckBoxPreference
+            android:key="nt_pref_fov_v"
+            android:title="Device Field of View (Vertical)"
+            android:summary="Returns the vertical field of view of the device"/>
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.controls.theory6.theoryvision.CameraView">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/top_bar"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_camera_view" />
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/floating_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        fab:fab_colorPressed="@color/colorPrimary"
+        fab:menu_labels_colorNormal="#00000000"
+        fab:menu_colorNormal="@color/blue"
+        fab:menu_icon="@drawable/ic_menu_gallery"
+        >
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/voice_view_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorPressed="@color/colorPrimary"
+            fab:fab_label="Voice Input"
+            />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/preview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorPressed="@color/colorPrimary"
+            fab:fab_label="Preview"
+            />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/hsv_view_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorPressed="@color/colorPrimary"
+            fab:fab_label="HSV"
+            />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/contour_view_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorPressed="@color/colorPrimary"
+            fab:fab_label="Contour"
+            />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/output_view_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorPressed="@color/colorPrimary"
+            fab:fab_label="Output"
+            />
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+</android.support.design.widget.CoordinatorLayout>

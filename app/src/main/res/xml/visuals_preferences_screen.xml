@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="Processing Settings"
+        android:summary="Restart App for Changes to Take affect (Only Need to do Once)">
+        <!--<CheckBoxPreference
+            android:key="visual_pref_contour_red"
+            android:title="Red Contour Color"
+            android:summary="Sets the Contour color to Red"
+            android:defaultValue="false"/>-->
+
+
+        <ListPreference
+            android:key="resolution_prefs"
+            android:dialogTitle="Select Resolution"
+            android:summary="Set Camera resolution"
+            android:title="Resolution"
+            android:entries="@array/resolution_list"
+            android:entryValues="@array/resolution_read_list"
+            android:defaultValue="640480"
+            />
+        <ListPreference
+            android:key="fps_prefs"
+            android:dialogTitle="Select FPS"
+            android:summary="Set Camera Frames Per Second"
+            android:title="FPS"
+            android:entries="@array/fps_display_list"
+            android:entryValues="@array/fps_list"
+            android:defaultValue="30000"
+            />
+        <ListPreference
+            android:key="portrait_orientation_prefs"
+            android:dialogTitle="Select Portrait Orientation"
+            android:summary="Set Portrait Camera Orientation"
+            android:title="Portrait Orientation"
+            android:entries="@array/portrait_orientation_display_list"
+            android:entryValues="@array/orientation_list"
+            android:defaultValue="0"
+            />
+        <ListPreference
+            android:key="landscape_orientation_prefs"
+            android:dialogTitle="Select Landscape Orientation"
+            android:summary="Set Landscape Camera Orientation"
+            android:title="Landscape Orientation"
+            android:entries="@array/landscape_orientation_display_list"
+            android:entryValues="@array/orientation_list"
+            android:defaultValue="0"
+            />
+        <!--<ListPreference
+            android:key="exposure_prefs"
+            android:dialogTitle="Select Exposure Compensation"
+            android:summary="Set the exposure compensation for the camera(-12 is optimal)"
+            android:title="Exposure Compensation"
+            android:entries="@array/exposure_list"
+            android:entryValues="@array/exposure_list"
+            android:defaultValue="-12"
+            />-->
+        <ListPreference
+            android:key="colour_effect_prefs"
+            android:dialogTitle="Select Colour Effect"
+            android:summary="Set the colour effect for the camera"
+            android:title="Colour Effect"
+            android:entries="@array/colour_effect_list"
+            android:entryValues="@array/colour_effect_read_list"
+            android:defaultValue="0"
+            />
+        <ListPreference
+            android:key="white_balance_prefs"
+            android:dialogTitle="Select White Balance"
+            android:summary="Set the white balance for the camera(Daylight is optimal)"
+            android:title="White Balance"
+            android:entries="@array/white_balance_list"
+            android:entryValues="@array/white_balance_read_list"
+            android:defaultValue="0"
+            />
+        <ListPreference
+            android:key="zoom_prefs"
+            android:dialogTitle="Select Zoom"
+            android:summary="Set the zoom for the camera"
+            android:title="Zoom"
+            android:entries="@array/zoom_list"
+            android:entryValues="@array/zoom_list"
+            android:defaultValue="0"
+            />
+        <EditTextPreference
+            android:key="ip_preference"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Robot IP"
+            android:summary="Set the IP of the Robot with periods (ex. 192.168.42.44)"
+            />
+        <EditTextPreference
+            android:key="networktables_name_prefs"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Networktable Name"
+            android:summary="Set the name of the network table to be sent to the robot (Name 'SmartDashboard' for direct output to SmartDashboard)"
+            />
+        <EditTextPreference
+            android:defaultValue="10"
+            android:key="target_width_preference"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Target Width"
+            android:summary="Set the width of the actual target in inches"
+            />
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

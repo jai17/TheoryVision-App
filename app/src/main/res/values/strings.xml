@@ -1,0 +1,234 @@
+<resources>
+    <string name="app_name">TheoryVision</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="preset">Game Preset</string>
+
+
+    <string name="drawer_app_name">Theory Vision</string>
+    <string name="drawer_team_name">1241 Theory6</string>
+
+    <string-array name="resolution_list">
+        <item>1280x720</item>
+        <item>720x480</item>
+        <item>640x480</item>
+        <item>320x240</item>
+    </string-array>
+    <string-array name="colour_effect_list">
+        <item>None</item>
+        <item>Aqua Effect</item>
+        <item>Blackboard Effect</item>
+        <item>Mono Effect</item>
+        <item>Negative Effect</item>
+        <item>Posterize Effect</item>
+        <item>Sepia Effect</item>
+        <item>Solarize Effect</item>
+        <item>Whiteboard Effect</item>
+    </string-array>
+    <string-array name="colour_effect_read_list">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+    <string-array name="white_balance_list">
+        <item>WHITE BALANCE DAYLIGHT</item>
+        <item>WHITE BALANCE FLUORESCENT</item>
+        <item>WHITE BALANCE WARM FLUORESCENT</item>
+        <item>WHITE BALANCE AUTO</item>
+        <item>WHITE BALANCE CLOUDY DAYLIGHT</item>
+        <item>WHITE BALANCE INCANDESCENT</item>
+        <item>WHITE BALANCE SHADE</item>
+        <item>WHITE BALANCE TWILIGHT</item>
+    </string-array>
+    <string-array name="white_balance_read_list">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+    <string-array name="zoom_list">
+        <item>0</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+        <item>35</item>
+        <item>40</item>
+        <item>45</item>
+        <item>50</item>
+        <item>55</item>
+        <item>60</item>
+    </string-array>
+    <string-array name="resolution_read_list">
+        <item>1280720</item>
+        <item>720480</item>
+        <item>640480</item>
+        <item>320240</item>
+    </string-array>
+
+    <string-array name="portrait_orientation_display_list">
+        <item>Portrait</item>
+        <item>Portrait180</item>
+    </string-array>
+    <string-array name="landscape_orientation_display_list">
+        <item>Landscape</item>
+        <item>Landscape180</item>
+    </string-array>
+    <string-array name="orientation_list">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="exposure_list">
+        <item>-12</item>
+        <item>-11</item>
+        <item>-10</item>
+        <item>-9</item>
+        <item>-8</item>
+        <item>-7</item>
+        <item>-6</item>
+        <item>-5</item>
+        <item>-4</item>
+        <item>-3</item>
+        <item>-2</item>
+        <item>-1</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+
+    </string-array>
+    <string-array name="fps_list">
+        <item>30000</item>
+        <item>25000</item>
+        <item>20000</item>
+        <item>15000</item>
+        <item>10000</item>
+        <item>5000</item>
+    </string-array>
+    <string-array name="fps_display_list">
+        <item>30</item>
+        <item>25</item>
+        <item>20</item>
+        <item>15</item>
+        <item>10</item>
+        <item>5</item>
+    </string-array>
+
+    <string name="device_admin_description">Enable device administration capabilities for CheezDroid for safe UI during matches.</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="pref_title_welcome">Turn off Welcome Screen</string>
+    <string name="pref_summary_welcome">Turn off the start up welcome screen to reduce load times</string>
+    <string name="pref_title_voice">Turn on Voice Assistant</string>
+    <string name="pref_summary_voice">Turn on Shadow to have hands-free operation</string>
+    <string name="pref_title_facebook">Like us on Facebook</string>
+    <string name="pref_title_github">See code on GitHub</string>
+    <string name="pref_title_instagram">Follow us on Instagram</string>
+    <string name="pref_title_twitter">Follow us on Twitter</string>
+    <string name="pref_title_nt">Configure NetworkTable Outputs</string>
+    <string name="pref_summary_nt">Select what data to send over NetworkTables</string>
+    <string name="pref_title_udp">Configure UDP Outputs</string>
+    <string name="pref_title_processing">Configure Processing Settings</string>
+    <string name="pref_summary_processing">Select settings for Resolution, Orientation, Target Width, FPS, Networktables, White Balance, Zoom and Robot IP</string>
+    <string name="pref_summary_udp">Select what data to send over UDP</string>
+    <string name="title_activity_settings_test">Settings</string>
+
+
+</resources>

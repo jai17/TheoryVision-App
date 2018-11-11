@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Space
+            android:id="@+id/space_top"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/exposure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="Exposure"
+            android:textColor="@android:color/background_light"
+            app:layout_constraintTop_toBottomOf="@+id/space_top"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="16dp" />
+        <!--<SeekBar
+            android:id="@+id/exposure_seekBar"
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:layout_width="260dp"
+            android:layout_height="16dp"
+            android:max="12"
+            android:min="-12"
+            android:progress="1"
+            android:la
+            app:layout_constraintTop_toBottomOf="@+id/exposure"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent" />-->
+
+        <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+            android:id = "@+id/exposure_seekBar"
+            android:layout_width="260dp"
+            android:layout_height="16dp"
+            app:dsb_min="-12"
+            app:dsb_max="12"
+            app:dsb_trackColor="@color/white"
+            app:dsb_indicatorColor="@color/colorOrange"
+            app:dsb_progressColor="@color/brightBlue"
+            tools:layout_editor_absoluteY="81dp"
+            tools:layout_editor_absoluteX="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/exposure"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <TextView
+            android:id="@+id/white_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="White Balance"
+            android:textColor="@android:color/background_light"
+            android:layout_marginLeft="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/exposure_seekBar"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="16dp" />
+
+        <Spinner
+            android:id="@+id/white_balance_Spinner"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown"
+            app:layout_constraintTop_toBottomOf="@+id/white_balance"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp" />
+
+        <TextView
+            android:id="@+id/zoom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Zoom"
+            android:textColor="@android:color/background_light"
+            app:layout_constraintTop_toBottomOf="@+id/white_balance_Spinner"
+            android:layout_marginLeft="16dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="16dp" />
+
+        <!--<SeekBar
+            android:id="@+id/zoom_seekBar"
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:layout_width="260dp"
+            android:layout_height="16dp"
+            android:max="5"
+            android:min="0"
+            android:progress="1"
+            app:layout_constraintTop_toBottomOf="@+id/zoom"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent" />-->
+
+        <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+            android:id = "@+id/zoom_seekBar"
+            android:layout_width="260dp"
+            android:layout_height="16dp"
+            app:dsb_min="-12"
+            app:dsb_max="12"
+            app:dsb_trackColor="@color/white"
+            app:dsb_indicatorColor="@color/colorOrange"
+            app:dsb_progressColor="@color/brightBlue"
+            tools:layout_editor_absoluteY="81dp"
+            tools:layout_editor_absoluteX="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/zoom"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <Button
+                android:id="@+id/camera_settings_preset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Optimal Preset"
+                android:onClick="optimalPreset"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/zoom_seekBar"
+                android:layout_marginTop="16dp" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

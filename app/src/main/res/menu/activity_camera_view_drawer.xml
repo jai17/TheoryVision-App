@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/reg_camera"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Preview Image" />
+        <item
+            android:id="@+id/hsv_view"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Start HSV/Tune" />
+        <item
+            android:id="@+id/contour_view"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Show Contours" />
+        <item
+            android:id="@+id/filter_settings"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Filter Settings" />
+        <item
+            android:id="@+id/output_view"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Show Output" />
+        <item
+            android:id="@+id/app_settings"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="App Settings" />
+
+    </group>
+
+    <item android:title="Connections">
+        <menu>
+            <item
+                android:id="@+id/networktables_icon"
+                android:icon="@mipmap/ic_launcher_round"
+                android:title="NetworkTables" />
+            <!--<item
+                android:id="@+id/udb_connection"
+                android:icon="@mipmap/ic_red_x"
+                android:title="UDP Connection" />-->
+            <item
+                android:id="@+id/tracking_status"
+                android:icon="@mipmap/ic_launcher_round"
+                android:title="Tracking Status" />
+        </menu>
+    </item>
+
+
+</menu>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <PreferenceCategory
+        android:title="App Settings">
+        <SwitchPreference
+            android:key="pref_assistant"
+            android:title="@string/pref_title_voice"
+            android:summary="@string/pref_summary_voice"
+            android:defaultValue="false" />
+        <SwitchPreference
+            android:key="pref_welcome"
+            android:title="@string/pref_title_welcome"
+            android:summary="@string/pref_summary_welcome"
+            android:defaultValue="true" />
+        <PreferenceScreen
+            android:title="@string/pref_title_nt"
+            android:summary="@string/pref_summary_nt">
+            <intent
+                android:targetPackage="com.controls.theory6.theoryvision"
+                android:targetClass="com.controls.theory6.theoryvision.NTSettingsActivity">
+            </intent>
+        </PreferenceScreen>
+
+        <PreferenceScreen
+            android:title="@string/pref_title_udp"
+            android:summary="@string/pref_summary_udp">
+            <intent
+                android:targetPackage="com.controls.theory6.theoryvision"
+                android:targetClass="com.controls.theory6.theoryvision.UDPSettingsActivity">
+            </intent>
+        </PreferenceScreen>
+
+        <PreferenceScreen
+            android:title="@string/pref_title_processing"
+            android:summary="@string/pref_summary_processing">
+            <intent
+                android:targetPackage="com.controls.theory6.theoryvision"
+                android:targetClass="com.controls.theory6.theoryvision.ProcessingSettingsActivity">
+            </intent>
+        </PreferenceScreen>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="About us">
+
+        <Preference
+            android:title="Privacy Policy"
+            android:icon="@drawable/export">
+            <intent android:action="android.intent.action.VIEW"
+                android:data="https://github.com/RickHansenRobotics/" />
+        </Preference>
+
+        <Preference
+            android:title="@string/pref_title_github"
+            android:icon="@drawable/github">
+            <intent android:action="android.intent.action.VIEW"
+                android:data="https://github.com/RickHansenRobotics/" />
+        </Preference>
+
+        <Preference
+            android:title="@string/pref_title_facebook"
+            android:icon="@drawable/facebook">
+            <intent android:action="android.intent.action.VIEW"
+                android:data="https://www.facebook.com/frc1241/" />
+        </Preference>
+
+        <Preference
+            android:title="@string/pref_title_instagram"
+            android:icon="@drawable/instagram">
+            <intent android:action="android.intent.action.VIEW"
+                android:data="https://www.instagram.com/frc1241/" />
+        </Preference>
+
+        <Preference
+            android:title="@string/pref_title_twitter"
+            android:icon="@drawable/twitter">
+            <intent android:action="android.intent.action.VIEW"
+                android:data="https://twitter.com/frc1241?lang=en" />
+        </Preference>
+
+    </PreferenceCategory>
+</PreferenceScreen>

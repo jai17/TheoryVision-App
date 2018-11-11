@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="theoryvision.theory6.controls.com.theoryvision">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTRERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:configChanges="keyboardHidden|orientation"
+        >
+        <activity
+            android:name=".WelcomeScreen"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HSVTunerActivity"
+            android:theme="@style/AppTheme.PopUp" />
+        <!--<activity
+            android:name=".CameraSettingsActivity"
+            android:theme="@style/AppTheme.PopUp" />-->
+        <activity
+            android:name=".FilterSettings"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!-- android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" -->
+        <activity android:name=".SettingsActivity" />
+        <activity android:name=".NTSettingsActivity" />
+        <activity android:name=".UDPSettingsActivity" />
+        <activity android:name=".ProcessingSettingsActivity" />
+
+        <activity android:name=".SaveSettings"
+            android:theme= "@style/AppTheme.DataPop"/>
+        <activity android:name=".SettingsViewer"
+            android:theme= "@style/AppTheme.DataPop"/>
+
+        <activity
+            android:name=".CameraView"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>
