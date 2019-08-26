@@ -3,7 +3,7 @@
 
 Android Vision Processing app developed by RickHansen Robotics for use in the First Robotics Competition
 
-Processing: OpenCV - VisionPipeline.java
+Processing: Implementation of OpenCV libraries
 
 ## Features
 
@@ -39,7 +39,7 @@ Copy OpenCV-android-sdk/sdk/native/libs/* to app/src/main/jniLibs/
 
 ## Setup:
 
-USB Tethering.........
+USB Tethering
 
 
 
