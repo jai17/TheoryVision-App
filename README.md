@@ -7,23 +7,23 @@ Processing: Implementation of OpenCV libraries
 
 ## Features
 
-HSV Tuning
+* HSV Tuning
 
-Contour Filtering 
+* Contour Filtering 
 
-Resolution Settings 
+* Resolution Settings 
 
-Saving and Loading Settings 
+* Saving and Loading Settings 
 
-Robot Feedback and Troubleshooting
+* Robot Feedback and Troubleshooting
 
-Shadow Voice Recognition 
+* Shadow Voice Recognition 
 
-App Settings 
+* App Settings 
 
-Data Output Settings
+* Data Output Settings
 
-Target Data Collection
+* Target Data Collection
 
 ## To install OpenCV
 
