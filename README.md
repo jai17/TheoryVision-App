@@ -25,7 +25,7 @@ Processing: Implementation of OpenCV libraries
 
 * Target Data Collection
 
-![GUI](TheoryVision-App/Annotation 2019-09-15 181354.png)
+![GUI](https://github.com/jai17/TheoryVision-App/blob/master/Annotation%202019-09-15%20181354.png)
 
 ## To install OpenCV
 
